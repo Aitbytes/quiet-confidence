@@ -1,0 +1,40 @@
+---
+const cards = [
+  {
+    title: "Finally Understand the Rules",
+    description: "Most introverts don't fail because they're not attractive enough—they fail because they don't understand how modern dating actually works. We'll teach you.",
+    icon: "📚"
+  },
+  {
+    title: "Conversations That Flow",
+    description: "No more awkward silences or anxiety before dates. Learn the exact conversation framework that works for introverted minds.",
+    icon: "💬"
+  },
+  {
+    title: "Date Without Losing Yourself",
+    description: "You shouldn't have to become an extrovert to find love. Learn to date as YOURSELF—not a performance.",
+    icon: "🌱"
+  }
+];
+---
+<section id="value-prop" class="py-16 sm:py-24 px-4 bg-white">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary text-center mb-12 sm:mb-16">
+      Everything You Need to Date with Confidence
+    </h2>
+    
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      {cards.map((card) => (
+        <div class="bg-surface p-6 sm:p-8 rounded-xl border border-gray-100 hover:border-accent/30 hover:shadow-lg transition-all duration-300">
+          <div class="text-4xl mb-4">{card.icon}</div>
+          <h3 class="font-heading text-xl font-semibold text-primary mb-3">
+            {card.title}
+          </h3>
+          <p class="text-text-muted leading-relaxed">
+            {card.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

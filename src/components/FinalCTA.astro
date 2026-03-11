@@ -1,0 +1,34 @@
+---
+const appName = "quiet-confidence";
+---
+<section class="py-16 sm:py-24 px-4">
+  <div class="max-w-3xl mx-auto text-center">
+    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary mb-6">
+      You Were Never Broken. You Were Just Never Taught.
+    </h2>
+    <p class="text-lg text-text-muted mb-10">
+      Join the waitlist to get early access and a free copy of "The Introvert's Guide to Modern Dating" (47-page PDF, written specifically for how you think).
+    </p>
+    
+    <form
+      class="waitlist-form flex flex-col sm:flex-row gap-3 justify-center items-center w-full max-w-md mx-auto mb-4"
+      data-form-id="bottom"
+      data-app-name={appName}
+    >
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        required
+        autocomplete="email"
+        class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-text-main placeholder-text-muted focus:outline-none focus:border-accent transition-colors"
+      />
+      <button
+        type="submit"
+        class="w-full sm:w-auto px-8 py-3 rounded-lg bg-accent text-white font-semibold hover:opacity-90 active:scale-95 transition-all whitespace-nowrap"
+      >
+        Join the Waitlist — It's Free
+      </button>
+    </form>
+    <p id="message-bottom" class="text-sm hidden"></p>
+  </div>
+</section>

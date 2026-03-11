@@ -1,0 +1,55 @@
+---
+const faqs = [
+  {
+    question: "I'm really shy. Will this work for me?",
+    answer: "Yes. This isn't about becoming louder—it's about using your natural introverted strengths (listening, thinking deeply, authenticity) to connect better."
+  },
+  {
+    question: "I'm in my 30s and have never been on a date. Is it too late?",
+    answer: "Not at all. Our oldest students are in their 40s and 50s. The skills work at any age."
+  },
+  {
+    question: "I don't want to fake being someone I'm not.",
+    answer: "Perfect. This course doesn't teach you to pretend. It teaches you to be MORE yourself—more authentic, more honest, more you."
+  },
+  {
+    question: "How long does it take to see results?",
+    answer: "Most students feel noticeable improvement within 2 weeks of starting. The course is self-paced, so you go as fast or slow as you need."
+  },
+  {
+    question: "What if I'm an introvert but want to date an extrovert?",
+    answer: "That's completely valid. The skills you learn work regardless of who you're dating. The course teaches you to navigate differences confidently."
+  },
+  {
+    question: "Is this just generic dating advice?",
+    answer: "No. Every module is specifically designed for introverted minds. We don't tell you to \"be more confident\" in a loud way. We teach quiet confidence."
+  }
+];
+---
+<section id="faq" class="py-16 sm:py-24 px-4 bg-white">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary text-center mb-12 sm:mb-16">
+      Frequently Asked Questions
+    </h2>
+    
+    <div class="space-y-4">
+      {faqs.map((faq) => (
+        <div class="border border-gray-200 rounded-lg overflow-hidden">
+          <details class="group">
+            <summary class="flex justify-between items-center p-5 cursor-pointer bg-surface hover:bg-gray-100 transition-colors list-none">
+              <span class="font-semibold text-primary pr-4">{faq.question}</span>
+              <span class="text-accent transition-transform group-open:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </span>
+            </summary>
+            <div class="p-5 pt-0 text-text-muted leading-relaxed">
+              {faq.answer}
+            </div>
+          </details>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

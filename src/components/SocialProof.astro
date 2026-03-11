@@ -1,0 +1,40 @@
+---
+const testimonials = [
+  {
+    quote: "I was 27, never been on a date, and thought I was broken. After the course, I went on three dates in two weeks—and actually enjoyed them. I stopped pretending to be someone I'm not.",
+    name: "James",
+    age: 28
+  },
+  {
+    quote: "The conversation module changed everything. I used to go blank on dates. Now I actually listen deeply—and it turns out that's what people love about me.",
+    name: "Sarah",
+    age: 31
+  },
+  {
+    quote: "I thought I needed to become an extrovert to date. This course showed me I just needed to learn the skills—without losing myself.",
+    name: "Mike",
+    age: 34
+  }
+];
+---
+<section class="py-16 sm:py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="font-heading text-3xl sm:text-4xl font-bold text-primary text-center mb-12 sm:mb-16">
+      What Our Students Say
+    </h2>
+    
+    <div class="grid sm:grid-cols-3 gap-6 sm:gap-8">
+      {testimonials.map((testimonial) => (
+        <div class="bg-white p-6 sm:p-8 rounded-xl border border-gray-100 shadow-sm">
+          <div class="text-accent text-4xl mb-4">"</div>
+          <p class="text-text-muted leading-relaxed mb-6">
+            {testimonial.quote}
+          </p>
+          <p class="font-semibold text-primary">
+            — {testimonial.name}, {testimonial.age}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+const appName = "quiet-confidence";
+---
+<section class="py-16 sm:py-24 px-4">
+  <div class="max-w-4xl mx-auto text-center">
+    <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+      Nobody Taught You This.
+    </h1>
+    <p class="text-lg sm:text-xl text-text-muted mb-10 max-w-2xl mx-auto leading-relaxed">
+      Dating skills designed for how introverts actually think. No fake confidence. No pretending to be someone you're not. Just the real skills to connect authentically.
+    </p>
+    
+    <form
+      class="waitlist-form flex flex-col sm:flex-row gap-3 justify-center items-center w-full max-w-md mx-auto mb-4"
+      data-form-id="hero"
+      data-app-name={appName}
+    >
+      <input
+        type="email"
+        placeholder="Enter your email address"
+        required
+        autocomplete="email"
+        class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 bg-white text-text-main placeholder-text-muted focus:outline-none focus:border-accent transition-colors"
+      />
+      <button
+        type="submit"
+        class="w-full sm:w-auto px-8 py-3 rounded-lg bg-accent text-white font-semibold hover:opacity-90 active:scale-95 transition-all whitespace-nowrap"
+      >
+        Get Early Access
+      </button>
+    </form>
+    <p id="message-hero" class="text-sm hidden"></p>
+    
+    <p class="text-sm text-text-muted mt-6">
+      Join 2,400+ introverts on the waitlist
+    </p>
+  </div>
+</section>
